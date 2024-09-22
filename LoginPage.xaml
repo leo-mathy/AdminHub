@@ -38,7 +38,7 @@
                 <TextBlock VerticalAlignment="Center">Se souvenir du mot de passe</TextBlock>
                 <CheckBox Margin="5,0" VerticalAlignment="Bottom" BorderBrush="#274C77" Background="#E7ECEF" Cursor="Hand"></CheckBox>
             </StackPanel>
-            <Button Margin="0,10" Width="200" FontSize="15" Background="#274C77" Foreground="#E7ECEF" BorderThickness="0" Cursor="Hand">
+            <Button Click="Login" Margin="0,10" Width="200" FontSize="15" Background="#274C77" Foreground="#E7ECEF" BorderThickness="0" Cursor="Hand">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="5"/>

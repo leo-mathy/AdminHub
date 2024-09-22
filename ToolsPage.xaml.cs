@@ -12,24 +12,17 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.Xml.Linq;
 
 namespace AdminHub
 {
     /// <summary>
-    /// Logique d'interaction pour LoginPage.xaml
+    /// Logique d'interaction pour ToolsPage.xaml
     /// </summary>
-    public partial class LoginPage : Page
+    public partial class ToolsPage : Page
     {
-        public LoginPage()
+        public ToolsPage()
         {
             InitializeComponent();
-        }
-
-        private void Login(object sender, RoutedEventArgs e)
-        {
-            NavigationService ActiveNav = NavigationService.GetNavigationService(this);
-            ActiveNav.Navigate(new Uri("ToolsPage.xaml", UriKind.Relative));
         }
     }
 }
