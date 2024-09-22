@@ -13,10 +13,19 @@
         >
     <Grid>
         <Frame Name="MainPageDisplay" Source="LoginPage.xaml"></Frame>
-        <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal">
-            <Image Name="MinimizeButton" MouseLeftButtonDown="MinimizeButton_Click" Height="25" Width="auto" Source="/Ressources/MinimizeIcon.png" Cursor="Hand" Margin="5"></Image>
-            <Image Name="CloseButton" MouseLeftButtonDown="CloseButton_Click" Height="25" Width="auto" Source="/Ressources/CloseIcon.png" Cursor="Hand" Margin="5"></Image>
-        </StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Rectangle MouseDown="MainWindowMove"  Fill="Transparent"/>
+            <StackPanel HorizontalAlignment="Right" VerticalAlignment="Top" Orientation="Horizontal">
+                <Image Name="MinimizeButton" MouseLeftButtonDown="MinimizeButton_Click" Height="25" Width="auto" Source="/Ressources/MinimizeIcon.png" Cursor="Hand" Margin="5"></Image>
+                <Image Name="CloseButton" MouseLeftButtonDown="CloseButton_Click" Height="25" Width="auto" Source="/Ressources/CloseIcon.png" Cursor="Hand" Margin="5"></Image>
+            </StackPanel>
+        </Grid>
     </Grid>
     <Window.Clip>
         <RectangleGeometry Rect="0,0,800,500" RadiusX="25" RadiusY="25"/>

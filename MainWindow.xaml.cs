@@ -28,8 +28,9 @@ namespace AdminHub
         {
             this.WindowState = WindowState.Minimized;
         }
+        private void MainWindowMove(object sender, MouseButtonEventArgs e)
+        {
+            this.DragMove();
+        }
     }
 }
-
-
-
